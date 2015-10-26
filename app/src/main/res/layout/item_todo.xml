@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvDate"
+        android:layout_toStartOf="@+id/tvDate"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_item"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDateAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/tvText"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="8dp"
+
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvComments"
+        android:id="@+id/tvComments"
+        android:layout_below="@+id/tvText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:autoLink="all"
+        android:layout_alignLeft="@+id/tvText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ivLevel"
+        android:layout_below="@+id/tvDateAdapter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

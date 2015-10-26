@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/main_color_light_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etText"
+            style="@style/FragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_bg"
+            android:drawableLeft="@drawable/ic_item"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPriorityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/spLevel"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@+id/spLevel"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/spLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvComments"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/etText"
+
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout_bg"
+
+            android:padding="5dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/tvComments"
+            style="@style/FragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etText"
+            android:layout_marginLeft="10dp"
+            android:text="@string/comments"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvComments"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout_bg"
+            android:hint="@string/enter_comments"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp">
+
+        <include
+            android:id="@+id/subCategory"
+            layout="@layout/cal_view" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/NiceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right|bottom"
+            android:padding="5dp"
+            android:text="@string/Save"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+</RelativeLayout>
+
+

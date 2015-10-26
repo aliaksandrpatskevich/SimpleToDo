@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyToDo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+    <string name="Enter">Enter a new value</string>
+    <string name="AddItem">Add</string>
+    <string name="Save">Save</string>
+    <string name="Edit">Edit item</string>
+    <string name="enter_new">New item..</string>
+    <string name="etDate"></string>
+    <string name="enter_comment">Enter comment</string>
+    <string name="comments_hint">Add any comments if you want</string>
+    <string name="enter_comments">comments..</string>
+    <string name="priority_level"> priority</string>
+    <string name="due_date">due Date</string>
+    <string name="app_title">ToDo</string>
+    <string name="comments">comments:</string>
+    <string name="delete_item">Delete item?</string>
+    <string name="ok_label">OK</string>
+    <string name="cancel_label">Cancel</string>
+
+    <string-array name="level">
+        <item>high</item>
+         <item>medium</item>
+        <item>low</item>
+    </string-array>
+</resources>

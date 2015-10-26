@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/main_color"
+    android:padding="3dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+                android:padding="5dp">
+
+        <ListView
+            android:id="@+id/lvItems"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/layout_bg"
+            android:divider="@drawable/divider"
+            android:dividerHeight="25dp"
+            android:drawSelectorOnTop="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_bg">
+
+            <EditText
+                android:id="@+id/etNewItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/enter_new"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/btnAddItem"
+                android:layout_toStartOf="@+id/btnAddItem"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/ic_item"
+                android:drawablePadding="8dp"
+                android:background="@drawable/layout_bg"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etNewItem"
+                android:layout_centerVertical="true"
+                android:text="@string/priority_level"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_priority_high"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/spLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLevel"
+                android:layout_alignBottom="@+id/tvLevel"
+                android:layout_toRightOf="@+id/tvLevel"
+                android:spinnerMode="dropdown"
+                android:gravity="right"
+                android:textAlignment="viewEnd"
+                android:layout_marginLeft="10dp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvDueDate"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/tvLevel"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@+id/spLevel"-->
+                <!--android:text="@string/due_date"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLevel"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/spLevel"
+                android:text="@string/due_date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/etComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvLevel"
+                android:hint="@string/enter_comments"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/btnAddItem"
+                style="@style/NiceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etNewItem"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onAddItem"
+                android:text="@string/AddItem"
+                android:layout_alignTop="@+id/etNewItem"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
