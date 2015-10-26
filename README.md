@@ -36,19 +36,6 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
-8 days ago I was totally new in Android development.. And then my friend sent me [this link about bootcamp](http://codepath.com/).
-After applying  I understood I have only 1 week to do SimpleToDo, my first app. I started "explearning" new area.
-These days were incredible exciting. And of course difficult and challenging. And I like it :-)
-Every day I got new things, implemented it in app. 
-So I fell in love with Android development :-) I even couldn't sleep :-)
-Of course this app is not perfect and will be improved - new features will be added, new design (actually it has "no design" 
-because I didn't have time to play with views, colors,themes, etc, eventhough design is probably one of the most important
-thing in mobile app, I think), some parts of code should be revised.
-
-So it's just a beginning.
-Thank you.
-
 ## License
 
     Copyright [2015] [Aliaksandr Patskevich]
